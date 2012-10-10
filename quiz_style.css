@@ -1,0 +1,91 @@
+ body {
+		font-family:Trebuchet MS,MS sans-serif,sans-serif;
+		font-size:medium;
+		color:
+      }
+
+
+ span.indexbuttons {
+		font-style:normal;
+		padding:8px;
+		margin-right:8px;
+		color:white;
+		background-color:#1E90FF;
+		border-radius:4px;
+		font-size:14px;
+		font-weight:bolder;
+		cursor:pointer;
+		
+	}
+
+#questionbar span {
+	
+			border-radius:28px;
+			padding:6px;
+			cursor:default;
+			color:#1E90FF;
+			background-color:white;
+			border:2px solid #1E90FF;
+		   }
+
+span.lockanshover {
+		color:#1E90FF;
+		background-color:black;
+		padding:5px;
+		margin:5px;
+		border-radius:5px;
+		cursor:pointer;
+	  }
+
+span.lockansout {
+		color:white;
+		background-color:gray;
+		padding:5px;
+		margin:5px;
+		border-radius:5px;
+		cursor:pointer;	
+	  }
+
+#tabchoice 
+	{
+		border-spacing:30px;
+			
+	}
+
+p.justifybar {
+		text-align:center;
+		color:white;
+		background-color:#2F4F4F;
+		border-radius:5px;
+		padding:10px;
+	    }
+justifybar p:first-letter{font-size:large; }
+
+span.scorecard {
+			border-radius:8px;
+			background-color:black;
+			font-weight:bolder;
+			font-height:16px;
+			font-size:large;
+			color:#FF4500;
+			width:10px;
+			padding:5px;
+			padding-top:20px;
+			padding-bottom:20px;
+			text-align:center;
+			border-spacing:10px;
+			border:6px double #FF4500;				
+		}
+img {border-radius:5px;}
+
+#allcontent {
+		width:550px;
+		margin-left:auto;
+		margin-right:auto;
+		border:2px solid #A9A9A9;
+		padding:5px;
+		border-radius:8px;
+		text-align:left;
+	    }
+
+hr {color:Teal;}
