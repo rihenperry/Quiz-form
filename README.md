@@ -1,4 +1,4 @@
 Quiz-form
 =========
 
-this is cleint script program written in javascript,Dom technologies
+this is client script program written in javascript,Dom technologies
