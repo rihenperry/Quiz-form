@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>5 minutes quiz</title>
+<link rel="stylesheet" type="text/css" href="quiz_style.css" />
+<script type="text/javascript" src="choice_selector.js"></script>
+<script type="text/javascript">
+window.onload=function(evt)
+		{
+			var indexbar1;
+			var getElement;
+			generateIndex();
+			pageSwaper(1);
+			
+			document.getElementById("lockans").onclick=function(evt) {
+								optionCheck(trackindex);
+							
+							};			
+
+
+			indexbar1.childNodes[1].onclick=function(evt) 
+						{
+							pageSwaper(1);
+						};	
+			indexbar1.childNodes[2].onclick=function(evt) 
+						{
+							pageSwaper(2);
+						};	
+			indexbar1.childNodes[3].onclick=function(evt) 
+						{
+							pageSwaper(3);
+						};	
+  			indexbar1.childNodes[4].onclick=function(evt) 
+						{
+							pageSwaper(4);
+						};				
+			indexbar1.childNodes[5].onclick=function(evt) 
+						{
+							pageSwaper(5);
+						};
+			indexbar1.childNodes[6].onclick=function(evt) 
+						{
+							pageSwaper(6);
+						};	
+			indexbar1.childNodes[7].onclick=function(evt) 
+						{
+							pageSwaper(7);
+						};
+		
+
+		function generateIndex()
+		{	
+				
+				indexbar1=document.getElementById("indexbar");
+			    	 for(var i=1;i<=7;i++)
+				{		
+				 	getElement = document.createElement("span");
+					getElement.className="indexbuttons";					
+					var labelbut = document.createTextNode(i);
+					getElement.appendChild(labelbut);
+					indexbar1.appendChild(getElement);
+					
+	
+				}
+
+				
+		}
+
+};
+
+</script>
+</head>
+<body>
+<div id="allcontent">
+<blockquote>
+<p id="questionbar">
+
+</p>
+</blockquote>
+<hr>
+<table>
+<td><blockquote><p><img id="images" width="300" height="300" alt="puzzle diag here" src="" /></p></blockquote></td>
+<td><span id="scorecard"></span></td>
+</table>
+<hr>
+<table id="tabchoice">
+<tr>
+<th>Options</th>
+<td><input id="choice1" type="radio" name="choice" value="" checked="unchecked" /><span name="opt1" id="opt1"></span></td>
+<td><input id="choice2" type="radio" name="choice" value="" checked="unchecked" /><span name="opt2" id="opt2"></span></td>
+<td><input id="choice3" type="radio" name="choice" value="" checked="unchecked" /><span name="opt3" id="opt3"></span></td>
+<td><input id="choice4" type="radio" name="choice" value="" checked="unchecked"/><span name="opt4" id="opt4"></span></td>
+<td><span id="lockans" name="button" onmouseout="this.className = 'lockansout'" onmouseover="this.className = 'lockanshover'">confirm</span></td>
+
+</tr>
+</table>
+<blockquote>
+<P id="justifybar">
+</p>
+</blockquote>
+<blockquote>
+<p id="indexbar">
+Questions :
+</p>
+</blockquote>
+</div>
+</body>
+</html>
